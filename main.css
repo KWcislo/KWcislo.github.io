@@ -35,33 +35,8 @@ header
     width: 30px;
 }  
 
-main {
-  max-width: 1300px;
-}
-
 section{
   margin: 16px;
   padding: 16px; 
   font-family:Verdana, Geneva, Tahoma, sans-serifs;
   ;
-}
-article {
-  padding-left: 80px; /* wcięcie w prawo od nagłówka*/
-  line-height: 1; /*interlinia*/
-}
-
-.information {
-  color: #509e98;
-  -ms-flex: 0 0 33.3%;
-  flex: 0 0 33.3%;
-  max-width: 35%;
-  font-size: 20px;
-}
-
-.information.date {
-
-  flex: 0 0 33.3%;
-  max-width: 50%;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
-}
