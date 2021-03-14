@@ -10,6 +10,7 @@ header
 {
   padding: 50px;
   text-align: center;
+  grid-area: header;
   background-image: url('Zdjecia/tlo.jpg');
   background-size: cover;
   background-position: center;
@@ -21,8 +22,8 @@ header
   margin: auto;
   width: 219px;
   height: 220px;
-  border-radius: 45% solid #rgb(8, 5, 5);
-  padding: 12px;
+  border-radius: 45% 
+  padding 12px;
   border-radius: 200px; 
 }
 .icon
@@ -38,5 +39,8 @@ header
 section{
   margin: 16px;
   padding: 16px; 
+  grid-area: section;
   font-family:Verdana, Geneva, Tahoma, sans-serifs;
-  ;
+}
+
+  
