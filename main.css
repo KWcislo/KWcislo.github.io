@@ -1,5 +1,67 @@
-p{
-    color:blueviolet;
-    font-size: medium;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+body {
+  margin: 0;
+  padding: 0;
+  line-height: 1.2; 
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 20px; 
+}
+
+header 
+{
+  padding: 50px;
+  text-align: center;
+  background-image: url('Zdjecia/tlo.jpg');
+  background-size: cover;
+  background-position: center;
+  color: rgb(0, 0, 0);
+}
+.profile
+{
+  display: block;
+  margin: auto;
+  width: 219px;
+  height: 220px;
+  border-radius: 45% solid #rgb(8, 5, 5);
+  padding: 12px;
+  border-radius: 200px; 
+}
+.icon
+{
+    text-align: center;
+    font-size: 15px;
+
+    margin-left: 30px;
+    margin-right: 30px;
+    width: 30px;
+}  
+
+main {
+  max-width: 1300px;
+}
+
+section{
+  margin: 16px;
+  padding: 16px; 
+  font-family:Verdana, Geneva, Tahoma, sans-serifs;
+  ;
+}
+article {
+  padding-left: 80px; /* wcięcie w prawo od nagłówka*/
+  line-height: 1; /*interlinia*/
+}
+
+.information {
+  color: #509e98;
+  -ms-flex: 0 0 33.3%;
+  flex: 0 0 33.3%;
+  max-width: 35%;
+  font-size: 20px;
+}
+
+.information.date {
+
+  flex: 0 0 33.3%;
+  max-width: 50%;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
 }
