@@ -1,0 +1,345 @@
+.results * {
+    box-sizing: border-box;
+    outline: none;
+    font-family: arial, sans-serif;
+}
+
+div.results  {
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+    max-height: none;
+}
+
+.results .first_line3 {
+    display: inline;
+    padding: 22px;
+    margin-top: 0px;
+    float: right;
+}
+
+.results .first_line2 {
+    border: 1px solid #3478e7;
+    background: #2f75e6;
+    color: rgb(250, 242, 242);
+    padding: 7px 18px;
+    border-radius: 3px;
+    margin-left: 7px;
+    cursor: pointer;
+}
+
+.results .first_line3 li {
+    padding: 11px;
+}
+
+
+.results img {
+    width: 90px;
+    display: inline;
+    margin-left:27px;
+    margin-right: 42px;
+    margin-top: 30px;
+    vertical-align: top;
+}
+
+.results .google_napis {
+    width: 40px;
+    top: 0px;
+    cursor: pointer;
+    padding: 7px 7px;
+    margin: -2px 7px;
+}
+
+.results .google_napis:hover {
+    background-color: #f5edede5;
+    padding: 7px 7px;
+    border-radius: 32px;
+}
+
+.results h2 a {
+    color: rgb(3, 5, 180);
+    font-size: 20px;
+}
+
+.results h2 {
+    font-weight: normal;
+    margin: 0 0 8px 0;
+}
+
+.results h2 a:hover {
+    text-decoration: underline;
+}
+
+.results .link {
+    color: rgb(68, 67, 67);
+    font-size: 13px;
+}
+
+
+.results a {
+    text-decoration: none;
+    color: rgb(78, 77, 77);
+}
+
+.results p {
+    font-size: 14px;
+    margin: 0;
+}
+
+.results span {
+    color: rgb(153, 150, 150);
+}
+.results ul {
+    margin: 0;
+    padding: 0;
+}
+
+.results .first_line {
+    display: block;
+    border-bottom: 2px solid rgb(241, 233, 233);
+}
+
+.results .search_options li{
+    color: #646a70;
+    margin-top: -10px;
+    font-size: 13px;
+}
+
+.results .search_elements {
+    width: 570px;
+    position: relative;
+}
+
+.results li {
+    display: inline;
+}
+
+
+.results .search {
+    margin-top: 22px;
+    width: 710px;
+    display: inline-block;
+    vertical-align: bottom;
+    color: #74787c;
+}
+
+.results .search .lupa {
+    opacity: 0.7;
+    width: 20px;
+    cursor: pointer;
+    height: 20px;
+    position: absolute;
+    top: -14px;
+    left: 630px;;
+}
+
+.results .search .mikrofon {
+    width: 20px;
+    position: absolute;
+    top: -19px;
+    left: 590px;
+    cursor: pointer;
+}
+
+.results .search .klawiatura {
+    width: 21px;
+    top: -14px;
+    left: 550px;
+    cursor: pointer;
+    position: absolute;
+    
+}
+
+.results .search .line {
+    border-left: 1px solid rgb(226, 226, 226);
+    position: absolute;
+    right: 23px;
+    top: 8px;
+    height: 25px;
+    
+}
+
+
+.results .search input:hover {
+    border: 1px solid rgb(252, 248, 248);
+    box-shadow: 0 0 5px rgba(175, 174, 174, 0.822);
+}
+
+.results .search_options {
+    
+    width: 720px;
+    margin-top: 30px;
+    margin-left: 20px;
+}
+
+.results .napis {
+    float: left;
+    margin-right: 10px;
+    margin-left: 0px;
+}
+
+.results .search .x {
+    opacity: 0.7;
+    width: 12px;
+    position: absolute;
+    top: -14px;
+    right: -2px;
+    cursor: pointer;
+}
+
+.results .search input {
+    display: block;
+    width: 100%;
+    width: 693px;
+    height: 46px;
+    padding: 14px;
+    padding-left: 21px;
+    border-radius: 26px;
+    border: 1px solid rgb(228, 225, 225);
+    font-size: 17px;
+    transition: box-shadow 100ms;
+}
+
+.results .napis2 {
+    float: right;
+    margin-right: 11px;
+    margin-left: 0px;
+}
+
+.results .search_options li {
+    padding: 10px 5px;
+}
+
+.results .search_options li a {
+    color: #717579;
+    font-family: Google Sans,arial,sans-serif;
+    font-size: 14px;
+    padding: 5px 8px;
+}
+
+.results .tools:hover{
+    background-color: rgb(250, 241, 241);
+    border: 1px solid rgba(223, 221, 221, 0.822);
+    border-radius: 2px;
+}
+
+.results .search_options li.active {
+    border-bottom: 3px solid #196cd8;
+}
+
+.results .search_options li.active a {
+    color: #1868d1;
+}
+
+.results .searchResults {
+    margin-left: 180px;
+    width: 585px;
+    display: inline-block;
+}
+
+.results .odniesienie {
+    margin: 25px 0 20px 5px;
+}
+
+.results .liczba_odniesien {
+    margin-top: 15px;
+    color: rgb(116, 114, 114);
+}
+
+.results .odniesienie p {
+    margin: 3px 0 25px 0;
+    color: #4e4d4d;
+    line-height: 1.5em;
+    font-size: 14px;
+}
+
+.results .odniesienie button {
+    font-size: 10px;
+    line-height: 20px;
+    color: rgb(70, 67, 67);
+    padding-left: 5px;
+    border: none;
+    background-color: white;
+    cursor: pointer;
+}
+
+
+.results table.pages {
+    position: relative;
+    margin: 0 auto;
+    text-align: center;
+    letter-spacing: -0.11em;
+    font-size: 2.4em;
+    margin-bottom: 21px;
+    font-weight: bold;
+    margin-left: 152px;
+}
+
+.results .numer {
+    font-size: 12px;
+    color: rgb(56, 98, 252);
+    letter-spacing: normal;
+    text-align: center;
+    cursor: pointer;
+}
+
+.results .odnosniki h2 {
+    margin-top: 4px;
+    margin-left: 4px;
+    margin-bottom: 21px;
+    
+}
+.results .pages .numer {
+    font-size: 14px;
+    font-weight: normal;
+}
+
+.results .header{
+    display: none;
+}
+
+.results .middle {
+    display: none;
+}
+
+.results footer{
+    display:none;
+}
+
+.results .blue {
+    color: #5993f1;
+}
+
+.results .red {
+    color: rgb(224, 38, 38);
+}
+
+.results .green {
+    color: rgb(42, 168, 31);
+}
+
+.results .yellow {
+    color: rgb(247, 203, 71);
+}
+
+.results .odnosniki td {
+    padding-top: 7px;
+    padding-right: 34px;
+    cursor: pointer;
+    color: rgb(3, 6, 172);
+    font-weight: bold;
+    font-size: 17px;
+   
+}
+
+.results .arrow {
+    margin-left: -52px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+   
+}
+
+.results .numer:hover{
+    text-decoration: underline;
+}

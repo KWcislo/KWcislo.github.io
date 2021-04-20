@@ -5,8 +5,11 @@
     <title>Google</title>
     <link rel="ikona"  href="zdjecia/ikona.png">
     <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="main2.css">
 </head>
-<body>
+<body class = "results">
+    <!--class="results" dla kolejnej wersji google-->
+    <div id="app" :class="[googleSearch.length > 0 ? 'results' : 'home']"> 
     <div class = "header">
         <a href ="https://mail.google.com">Gmail</a>
         <a href ="https://www.google.pl/imghp?hl=pl&ogbl">Grafika</a>
@@ -42,5 +45,149 @@
             </div>
         </div>
     </footer>
+    
+    <div class="first_line">
+        <img src="zdjecia/napis2.png">
+
+        <ul class="first_line3">
+          <li><a href="#"><img src="zdjecia/ikona2.png" class="google_napis" role="button"></a></li>
+          <li><button class="first_line2" type="button" name="button">Zaloguj się</button></li>
+        </ul>
+
+        <div class="search">
+
+          <div class="search_elements">
+            <input ref="second" type="text" v-model="googleSearch">
+            <img src="zdjecia/lupa.png" class="lupa">
+            <img src="zdjecia/mikrofon.png" class="mikrofon">
+            <img src="zdjecia/klawiatura.png" class="klawiatura">
+            <div class="line"></div>
+            <img src="zdjecia/x.png" class="x">
+          </div>
+
+          <ul class="search_options">
+            <li class="napis"><a href="https://www.youtube.com/watch?v=Gx4JEBwVlXo">Wszystko</a></li>
+            <li class="napis"><a href="https://www.youtube.com/watch?v=Bag1gUxuU0g">Wiadomości</a></li>
+            <li class="napis"><a href="https://www.youtube.com/watch?v=1rTV7DCnF3Y">Grafika</a></li>
+            <li class="napis"><a href="https://www.youtube.com/watch?v=cE6wxDqdOV0">Wideo</a></li>
+            <li class="napis"><a href="https://www.youtube.com/watch?v=DHEOF_rcND8">Mapy</a></li>
+            <li class="napis"><a href="https://www.youtube.com/watch?v=NrN3DLVpE28">Więcej</a></li>
+            <li class="napis2"><a class="tools" href="#">Narzędzia</a></li>
+            <li class="napis2"><a href="#">Ustawienia</a></li>
+          </ul>
+        </div>
+
+    </div> 
+
+    <div class="searchResults">
+
+        <p class="liczba_odniesien"> Około  18042000 wyników (0,21 s)</p>
+
+        <div class="odniesienie">
+          <a class="link" href="#">www.wikipedia.org› wiki › Ognisko_domowe</a><button>▼</button>
+          <h2><a href="#">Ognisko domowe - Wikipedia, wolna encyklopedia</a></h2>
+          <p>Była siostrą Zeusa. Ognisko ku jej czci paliło się w każdym greckim domu. Stąd powiedzenie „w kręgu domowego ogniska”. W Rzymie ogniskiem domowym ...</p>
+        </div>
+
+        <div class="odniesienie">
+          <a class="link" href="#">www.wsjp.pl› answer</a><button>▼</button>
+          <h2><a href="#">Ognisko domowe - Wielki słownik języka polskiego</a></h2>
+          <p>Ognisko domowe. rzadziej ognisko rodzinne. Definicja. dom rodzinny jako miejsce, w którym doświadczamy ciepła, spokoju, poczucia bezpieczeństwa i ...</p>
+        </div>
+
+        <div class="odniesienie">
+          <a class="link" href="#">www.synonim.net › synonim</a><button>▼</button>
+          <h2><a href="#">Synonim ognisko domowe • Słownik synonimów do wyrażenia ...</a></h2> 
+          <p>Wyrażenie ognisko domowe posiada 41 synonimów w słowniku synonimów. Synonimy słowa ognisko domowe: siedziba, własny kąt, lokum, dom, mieszkanie, ...</p>
+        </div>
+
+        <div class="odniesienie">
+          <a class="link" href="#">www.glowakamisia.com › blog › jak-wyszukiwac-w-google</a><button>▼</button>
+          <h2><a href="#">Ciepło domowego ogniska -  ...</a></h2> 
+          <p>Domowe ognisko. Ciepło domowego ogniska jest jedynie przenośnią, jednak w naszym życiu naprawdę potrzebujemy kontaktu z ogniem, nie ...</p>
+        </div>
+
+        <div class="odniesienie">
+          <a class="link" href="#">www.cofniecie sie do przeszlosci.pl › blog › </a><button>▼</button>
+          <h2><a href="#">Czy przypadkiem kiedyś nie będziemy tego żałować?</a></h2>
+          <p><span>24.01.2000 — </span>Na to pytanie, odpowiemy już niebawem. W swoim odpowiednim czasie wszystko się rozwiąże</p>
+        </div>
+
+        <div class="odniesienie">
+          <a class="link" href="#">www.yt.pl › pozywtyne emocje ›  wyszukiwa...</a><button>▼</button>
+          <h2><a href="https://www.youtube.com/watch?v=7xzU9Qqdqww">A teraz troszkę muzyki...</a></h2>
+          <p><span> 21.05.1999 — </span>Czemu ta piosenka? Akurat leci w tym momencie na mojej playliście</p>
+        </div>
+
+        <div class="odniesienie">
+          <a class="link" href="#">www.wykop.pl › wpis ›</a><button>▼</button>
+          <h2><a href="https://www.youtube.com/watch?v=WSWrepLjTKc">Moim zdaniem to nie ma tak, że dobrze albo że nie ... - Wykop</a></h2>
+          <p>Chodzi o to, że kiedy wyznaje się pewne wartości, nawet pozornie uniwersalne, bywa, że nie znajduje się zrozumienia, które by tak rzec, które ...
+            Wideo</p>
+        </div>
+
+        <div class="odniesienie">
+          <a class="link" href="#">www.marzenczar.pl ›</a><button>▼</button>
+          <h2><a href="#">- A jeśli pewnego dnia będę musiał odejść?... - Hospicjum ...</a></h2>
+          <p>- zapewnił go Puchatek. - Posiedzę tu sobie i na Ciebie poczekam. Kiedy się kogoś kocha, to ten drugi ktoś nigdy nie znika. Alan Alexander Milne - Kubuś ...</p>
+        </div>
+
+        <br>
+
+        <div class="odnosniki">
+          <h2>Wyszukiwania podobne do: życie</h2>
+          <table>
+            <tr>
+              <td>Czym jest życie człowieka</td>
+              <td>Jakie jest życie</td>
+            </tr>
+            <tr>
+              <td>Życie definicją filozoficzną</td>
+              <td>Te życie czy to życie</td>
+            </tr>
+            <tr>
+              <td>Życie jest cudowne </td>
+              <td>Żyć trzeba umieć</td>
+            </tr>
+          </table>
+        </div>
+        <br><br>
+
+          <table class="pages">
+            <tr>
+              <td><span class="blue">G</span></td>
+              <td><span class="red">o</span></td>
+              <td><span class="yellow">o</span></td>
+              <td><span class="yellow">o</span></td>
+              <td><span class="yellow">o</span></td>
+              <td><span class="yellow">o</span></td>
+              <td><span class="yellow">o</span></td>
+              <td><span class="yellow">o</span></td>
+              <td><span class="yellow">o</span></td>
+              <td><span class="yellow">o</span></td>
+              <td><span class="yellow">o</span></td>
+              <td><span class="blue">g</span></td>
+              <td><span class="green">l</span></td>
+              <td><span class="red">e</span></td>
+              <td rowspan="3" style="width: 12px;"></td>
+              <td><span class="blue arrow">></span></td>
+            </tr>
+
+            <tr>
+              <td class="numer"></td>
+              <td class="numer" style="color: rgb(8, 8, 8); cursor: text;">1</td>
+              <td class="numer">2</td>
+              <td class="numer">3</td>
+              <td class="numer">4</td>
+              <td class="numer">5</td>
+              <td class="numer">6</td>
+              <td class="numer">7</td>
+              <td class="numer">8</td>
+              <td class="numer">9</td>
+              <td class="numer">10</td>
+            </tr>
+          </table>
+      </div>
+    </div>
 </body>
 </html>
