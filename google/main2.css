@@ -343,3 +343,22 @@ div.results  {
 .results .numer:hover{
     text-decoration: underline;
 }
+
+.results .searchResults .cities{
+    padding:20px;
+}
+
+
+.results .searchResults .cities ul li{
+    display: list-item;
+    margin-left: 10px;
+    color:rgb(3, 6, 189);
+    list-style: circle;
+    padding: 7px;
+    font-size: 16px;
+}
+.results .searchResults .cities a{
+    color: rgb(8, 8, 8);
+    margin-bottom: 10px;
+    font-size: 16px;
+}

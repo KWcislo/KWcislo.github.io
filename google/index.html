@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="main.css">
     <link rel="stylesheet" href="main2.css">
     <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12/dist/vue.js"></script>
+    <script src="cities.js"></script>
 </head>
 <body>
     <!--class="results" dla kolejnej wersji google-->
@@ -83,7 +84,14 @@
     <div class="searchResults">
 
         <p class="liczba_odniesien"> Około  18042000 wyników (0,21 s)</p>
-
+        <div class="cities">
+          <a class="link">Miasta zawierające "{{googleSearch}}":</a>
+          <ul>
+            <li v-for="city in filteredCities">
+              {{ city.name }}
+            </li>
+          </ul>
+        </div>
         <div class="odniesienie">
           <a class="link" href="#">www.wikipedia.org› wiki › Ognisko_domowe</a><button>▼</button>
           <h2><a href="#">Ognisko domowe - Wikipedia, wolna encyklopedia</a></h2>
@@ -196,6 +204,19 @@
     el: '#app',
     data: {
       googleSearch: '',
+      cities: window.cities,
+    },
+
+    computed: {
+      filteredCities: function() {
+        let result = this.cities.filter(city => city.name.includes(this.googleSearch));
+        if(result.length>10){
+          return result.slice(1,11);
+        }
+        return result;
+      }
+    },
+
     updated() {
         this.$nextTick(() => {
 
@@ -208,10 +229,9 @@
         this.$refs.first.focus();
 
         }
+      })
     }
-        )}
-  
-}
-});
+  });
+
 </script>
 </html>
