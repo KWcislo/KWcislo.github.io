@@ -6,8 +6,9 @@
     <link rel="ikona"  href="zdjecia/ikona.png">
     <link rel="stylesheet" href="main.css">
     <link rel="stylesheet" href="main2.css">
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12/dist/vue.js"></script>
 </head>
-<body class = "results">
+<body>
     <!--class="results" dla kolejnej wersji google-->
     <div id="app" :class="[googleSearch.length > 0 ? 'results' : 'home']"> 
     <div class = "header">
@@ -18,11 +19,11 @@
     <div class="middle">
         <img src="zdjecia/napis.png" class="napis"><br><br>
             <div class="middle1">
-                <input type="text" class="middle2">
-                <img src="zdjecia/ikona3.png" class="middle3">
-                <img src="zdjecia/mikrofon.png" class="middle4">
-                <input type="button" class="middle5" value="Sukaj w google">
-                <input type="button" class="middle5" value="Szczęśliwy traf">
+                <input ref="first" v-model="googleSearch" type="text" class="middle2"/>
+                <img src="zdjecia/ikona3.png" class="middle3"/>
+                <img src="zdjecia/mikrofon.png" class="middle4"/>
+                <input type="button" class="middle5" value="Sukaj w google"/>
+                <input type="button" class="middle5" value="Szczęśliwy traf"/>
             </div>
     </div>
     <footer>
@@ -190,4 +191,27 @@
       </div>
     </div>
 </body>
+<script>
+  var app = new Vue({
+    el: '#app',
+    data: {
+      googleSearch: '',
+    updated() {
+        this.$nextTick(() => {
+
+        if (this.googleSearch.length > 0) {
+
+        this.$refs.second.focus();
+
+        } else {
+
+        this.$refs.first.focus();
+
+        }
+    }
+        )}
+  
+}
+});
+</script>
 </html>
