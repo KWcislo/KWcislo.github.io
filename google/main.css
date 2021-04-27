@@ -52,10 +52,38 @@ body {
     line-height: 25px;
     font-weight: 450;
     font-size: 15px;
-    color: rgba(0, 0, 0, 0.87);
+    color: rgba(7, 7, 7, 0.87);
 	padding: 20px 7px;
     display: inline-block;
 }
+.lista {
+	border: 1px solid rgb(240, 238, 238);
+	cursor: auto;
+	border-radius: 24px;
+	outline: none;
+}
+.lista:hover {
+	box-shadow: 0 0 5px rgba(158, 157, 157, 0.822);
+	border: 1px solid rgb(253, 248, 248);
+	
+}
+
+.lista .lista2 li{
+	list-style: none;
+	margin: 0 14px 0 14px;
+	text-align: left;
+	padding: 6px 5px 6px 28px;
+	background-image: url('zdjecia/lupa.png');
+	background-repeat: no-repeat;
+	background-position: left center;
+	background-size: 21px;
+	
+}
+
+.lista .lista2 li:hover{
+	background-color: rgb(250, 246, 246);
+}
+
 
 .middle {
 	flex: 5; 
