@@ -80,7 +80,7 @@ body {
 	
 }
 
-.lista .lista2 li:hover{
+.lista .lista2 li.pogrubienie{
 	background-color: rgb(250, 246, 246);
 }
 
@@ -127,6 +127,9 @@ body {
     width: 18px;
 	opacity: .5;
 	position: absolute;
+}
+.thin {
+	font-weight: 500;
 }
 	
 
